@@ -1,0 +1,12 @@
+shl_recommender/
+├── agent.py              # Core agent logic (retrieval + LLM + intent handling)
+├── main.py               # FastAPI service (/health, /chat)
+├── vector_store.py       # Build FAISS index from catalog
+├── evaluate.py           # Offline eval against 10 sample conversations
+├── data_loader.py        # Catalog inspection helper
+├── requirements.txt      # Pinned deps for deployment
+├── render.yaml           # Render deployment config
+├── .env.example          # API key template
+├── shl_product_catalog.json
+├── faiss_index/          # Pre-built FAISS index (377 assessments)
+└── sample_conversations/ # 10 evaluation traces (C1.md–C10.md)
