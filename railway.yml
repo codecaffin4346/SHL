@@ -1,0 +1,20 @@
+# Railway config-as-code — SHL Assessment Recommender
+# https://docs.railway.com/reference/config-as-code
+#
+# Railway auto-detects railway.toml / railway.json. For this file, either:
+#   Service Settings → Config file → railway.yml
+#   or copy/rename to railway.toml
+#
+# Variables (set in Railway dashboard):
+#   GROQ_API_KEY
+#   GROQ_MODEL  (optional)
+
+build:
+  builder: RAILPACK
+  buildCommand: pip install -r requirements.txt
+
+deploy:
+  startCommand: python startup.py
+  healthcheckPath: /health
+  healthcheckTimeout: 300
+  restartPolicyType: ON_FAILURE

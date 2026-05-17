@@ -255,7 +255,7 @@ Post-launch tracking in Streamlit app:
 | **Embeddings** | Cohere | High-quality semantic understanding |
 | **LLM** | Claude (via API) | Strong reasoning, instruction-following, tool use |
 | **API** | FastAPI | Modern, fast, automatic OpenAPI docs |
-| **Deployment** | Render | Simple YAML config, free tier friendly |
+| **Deployment** | Railway | Config-as-code via railway.yml |
 | **Frontend** | Streamlit | Rapid UI development, built-in components |
 
 ## Key Files
@@ -294,8 +294,9 @@ python main.py  # Navigate to http://localhost:8000
 ### Deployment
 
 ```bash
-# Render deployment (see render.yaml)
-git push  # Auto-deploys to Render
+# Railway deployment (see railway.yml)
+# Connect repo at railway.com, set GROQ_API_KEY / GROQ_MODEL, then:
+git push  # Auto-deploys on Railway
 ```
 
 ## Future Improvements

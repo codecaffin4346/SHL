@@ -1,6 +1,6 @@
 """
 Startup script: builds FAISS index if missing, then starts uvicorn.
-Used by Render/Railway/Fly deployment.
+Used by Railway/Fly deployment.
 """
 import os
 import subprocess

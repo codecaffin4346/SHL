@@ -5,7 +5,7 @@ shl_recommender/
 ├── evaluate.py           # Offline eval against 10 sample conversations
 ├── data_loader.py        # Catalog inspection helper
 ├── requirements.txt      # Pinned deps for deployment
-├── render.yaml           # Render deployment config
+├── railway.yml           # Railway deployment config
 ├── .env.example          # API key template
 ├── shl_product_catalog.json
 ├── faiss_index/          # Pre-built FAISS index (377 assessments)
