@@ -1,0 +1,10 @@
+﻿venv/
+__pycache__/
+*.pyc
+.env
+faiss_index/
+shl_product_catalog.json
+sample_conversations/
+sample_conversations.zip
+eval_report.json
+test_c3.py
